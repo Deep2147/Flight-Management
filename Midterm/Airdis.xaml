@@ -1,0 +1,55 @@
+﻿<Window x:Class="Midterm.Airdis"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="Airdis" Height="450" Width="800">
+    <Grid x:Name="nametb">
+        <DockPanel>
+            <Menu x:Name="File" Width="801" Background="#FFF3B3B3" >
+                <MenuItem x:Name="filemenu" FontSize="16" Header="File">
+                    <MenuItem x:Name="New" FontSize="14" Header="New" Click="addal_Click"/>
+                    <MenuItem x:Name="addm" FontSize="14" Header="Save" Click="addal_Click"/>
+                    <MenuItem x:Name="quitm" FontSize="14" Header="Quit" Click="exit_click"/>
+                </MenuItem>
+
+                <MenuItem x:Name="edit" FontSize="16" Header="Edit">
+                    <MenuItem x:Name="insert" FontSize="14" Header="Insert" Click="addal_Click"/>
+                    <MenuItem x:Name="udate" FontSize="14" Header="Update" Click="upal_Click"/>
+                    <MenuItem x:Name="del" FontSize="14" Header="Delete" Click="delal_Click"/>
+                </MenuItem>
+
+                <MenuItem x:Name="elp" FontSize="16" Header="Help" >
+
+                    <MenuItem x:Name="aboutme" FontSize="14" Header="About" Click="help_Click"/>
+                </MenuItem>
+
+            </Menu>
+        </DockPanel>
+
+        <Label x:Name="aplabel" Content="Airline Page" HorizontalAlignment="Left" Margin="320,6,0,0" VerticalAlignment="Top" Height="46" Width="154" FontSize="22"/>
+        <ListBox x:Name="aldisplay" Margin="0,52,0,269"/>
+        <Button x:Name="addal" Content="Save/Add" HorizontalAlignment="Left" Margin="83,351,0,0" VerticalAlignment="Top" Height="47" Width="107" Click="addal_Click" Background="#FFECC96C"/>
+        <Button x:Name="delal" Content="Delete" HorizontalAlignment="Left" Margin="222,353,0,0" VerticalAlignment="Top" Height="43" Width="104" Click="delal_Click" Background="#FFECC96C"/>
+        <Button x:Name="upal" Content="Edit" HorizontalAlignment="Left" Margin="366,356,0,0" VerticalAlignment="Top" Height="43" Width="104" Click="upal_Click" Background="#FFECC96C"/>
+        <TextBox x:Name="idtb" HorizontalAlignment="Left" Margin="47,185,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="32"/>
+        <TextBox x:Name="nametb1" HorizontalAlignment="Left" Margin="319,185,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Height="32"/>
+        <TextBox x:Name="seatstb" HorizontalAlignment="Left" Margin="148,270,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="32"/>
+        <RadioButton x:Name="meal1" GroupName="meal" Content="Vegeterian" HorizontalAlignment="Left" Margin="376,270,0,0" VerticalAlignment="Top" Height="31" Width="109" IsChecked="True"/>
+        <RadioButton x:Name="meal2" GroupName="meal" Content="Non-Vegeterian" HorizontalAlignment="Left" Margin="504,270,0,0" VerticalAlignment="Top" Height="32" Width="109"/>
+
+        <Label x:Name="id" Content="Id" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Name" Content="Name" HorizontalAlignment="Left" Margin="226,185,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="plane" Content="Airplane" HorizontalAlignment="Left" Margin="504,185,0,0" VerticalAlignment="Top" Height="32" Width="95" FontSize="18"/>
+        <Label x:Name="seats" Content="Seats" HorizontalAlignment="Left" Margin="15,267,0,0" VerticalAlignment="Top" FontSize="18"/>
+
+        <RadioButton x:Name="aplane" GroupName="plane" Content="Boeing-777" HorizontalAlignment="Left" Margin="604,194,0,0" VerticalAlignment="Top" Height="32" Width="109" IsChecked="True"/>
+        <RadioButton x:Name="aplane2" GroupName="plane" Content="Airbus-320" HorizontalAlignment="Left" Margin="604,231,0,0" VerticalAlignment="Top" Height="32" Width="109"/>
+        <Button x:Name="back" Content="Back" HorizontalAlignment="Left" Margin="527,355,0,0" VerticalAlignment="Top" Height="43" Width="104" Click="menu_click" Background="#FFECC96C"/>
+
+
+
+    </Grid>
+</Window>

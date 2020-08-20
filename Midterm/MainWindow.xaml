@@ -1,0 +1,30 @@
+﻿<Window x:Class="Midterm.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Midterm"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF81E9F3">
+        <Grid HorizontalAlignment="Left" Height="206" Margin="52,0,0,0" VerticalAlignment="Center" Width="673">
+            <TextBox x:Name="userbox" HorizontalAlignment="Left" Margin="43,27,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="308" Height="41" BorderBrush="#FFBDE27D" FontSize="18" Grid.Column="1"/>
+            <PasswordBox x:Name="passbox" HorizontalAlignment="Left" Margin="43,27,0,0"   VerticalAlignment="Top" Width="308" Height="33" FontSize="18" Grid.Column="1" Grid.Row="1"/>
+            <Label Content="Username" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" Height="41" Width="139" FontSize="22"/>
+            <Label Content="Password" HorizontalAlignment="Left" Margin="48,27,0,0" VerticalAlignment="Top" Height="37" Width="139" FontSize="24" Grid.Row="1"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40*"/>
+                <ColumnDefinition Width="70*"/>
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50*"/>
+                <RowDefinition Height="50*"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Button x:Name="exit" Content="exit" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Height="38" Width="144" FontSize="18" Click="exit_Click" Background="#FFBDE27D"/>
+        <Button x:Name="login" Content="login" HorizontalAlignment="Left" Margin="516,355,0,0" VerticalAlignment="Top" Height="38" Width="137" Click="Button_Click" FontSize="18" Background="#FFBDE27D"/>
+
+        <Label Content="Login to Flight Management"   HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="100" Width="506" FontSize="36" FontWeight="Bold"/>
+    </Grid>
+</Window>
